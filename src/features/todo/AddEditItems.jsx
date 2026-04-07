@@ -46,7 +46,7 @@ function AddEditItems() {
 
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col sm:flex-row items-center justify-center gap-3"
+        className="flex flex-col sm:flex-row p-2 items-center justify-center gap-3"
       >
         <InputText
           {...register("description")}
