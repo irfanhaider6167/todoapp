@@ -5,23 +5,23 @@ import { Link } from "react-router-dom";
 function TailwindTable({ data, onEdit }) {
   const { del, statusChange } = useGlobalContext();
   return (
-    <div className="max-w-4xl mx-auto p-1">
+    <div className="p-1">
       <div className="overflow-x-auto rounded-2xl shadow">
         <table className="min-w-full border border-gray-200 dark:border-gray-700">
           {/* HEADER */}
           <thead className="bg-gray-100 dark:bg-gray-800">
             <tr>
-              <th className="px-4 py-2 text-left text-gray-700 dark:text-gray-200">
+              <th className="px-1 py-2 text-left text-gray-700 dark:text-gray-200">
                 ID
               </th>
-              <th className="px-4 py-2 text-left text-gray-700 dark:text-gray-200">
+              <th className="px-1 py-2 text-left text-gray-700 dark:text-gray-200">
                 Task
               </th>
-              <th className="px-4 py-2 text-left text-gray-700 dark:text-gray-200">
+              <th className="px-1 py-2 text-left text-gray-700 dark:text-gray-200">
                 Status
               </th>
               {/* <th className="px-4 py-2 text-left text-gray-700 dark:text-gray-200"></th> */}
-              <th className="px-4 py-2 text-center text-gray-700 dark:text-gray-200">
+              <th className="px-1 py-2 text-center text-gray-700 dark:text-gray-200">
                 Actions
               </th>
             </tr>
@@ -34,17 +34,17 @@ function TailwindTable({ data, onEdit }) {
                 key={item.id}
                 className="border-t border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition"
               >
-                <td className="px-4 py-2 text-gray-700 dark:text-gray-200">
+                <td className="px-2 py-2 text-gray-700 dark:text-gray-200">
                   {item.id}
                 </td>
 
                 <td
-                  className={`px-4 py-2 dark:text-gray-200 
+                  className={`px-2 py-2 dark:text-gray-200 
                     ${item.status ? "line-through opacity-60" : ""}`}
                 >
                   {item.description}
                 </td>
-                <td className="px-4 py-2">
+                <td className="px-2 py-2">
                   <span
                     className={`px-2 py-1 text-xs rounded-md ${
                       item.status
@@ -58,7 +58,7 @@ function TailwindTable({ data, onEdit }) {
 
                 {/* ACTION BUTTONS */}
                 {/* <td className="px-4 py-2 text-center"></td> */}
-                <td className="px-4 py-2 flex items-center justify-center gap-2">
+                <td className="px-1 py-2 flex items-center justify-center gap-2">
                   <input
                     type="checkbox"
                     checked={item.status}
@@ -68,7 +68,7 @@ function TailwindTable({ data, onEdit }) {
                   <Link to={`/edit/${item.id}`}>
                     <button
                       onClick={() => onEdit(item)}
-                      className="bg-blue-500 text-white px-3 py-1 rounded-lg hover:bg-blue-600 
+                      className="bg-blue-500 text-white px-2 py-1 rounded-lg hover:bg-blue-600 
                                dark:bg-blue-400 dark:text-black"
                     >
                       Edit
@@ -77,7 +77,7 @@ function TailwindTable({ data, onEdit }) {
 
                   <button
                     onClick={() => del(item.id)}
-                    className="bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-red-600 
+                    className="bg-red-500 text-white px-2 py-1 rounded-lg hover:bg-red-600 
                                dark:bg-red-400 dark:text-black"
                   >
                     Delete
