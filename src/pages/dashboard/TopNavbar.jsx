@@ -2,7 +2,7 @@ function TopNavbar({ data }) {
   const { isOpen, setIsOpen, darkMod, setDarkMod } = data;
 
   return (
-    <div className="flex bg-gray-100 dark:bg-gray-900 justify-between p-4 items-center shadow">
+    <div className="flex w-auto  bg-gray-100 dark:bg-gray-900 justify-between p-4 items-center shadow">
       {/* Left: Hamburger (mobile only) */}
       <div
         className="pi pi-bars text-gray-500 dark:text-white text-2xl cursor-pointer md:hidden"

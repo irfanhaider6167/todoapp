@@ -50,14 +50,14 @@ function SideNavbar({ sideData }) {
 
         {/* Menu */}
         <div className="p-4 dark:text-white">
-          <ul className="flex flex-col gap-4 pt-4">
+          <ul className="flex flex-col gap-4 pt-4 items-center justify-center">
             <li>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
                   isActive
-                    ? "bg-blue-400 text-white px-4 py-2 rounded-md"
-                    : "text-gray-600 hover:bg-gray-200 px-4 py-2 rounded-md"
+                    ? "bg-blue-400 text-white px-8 py-2 rounded-md"
+                    : "text-gray-600 hover:bg-gray-200 px-8 py-2 rounded-md"
                 }
               >
                 <span className="pi pi-list"> Item List</span>
@@ -69,8 +69,8 @@ function SideNavbar({ sideData }) {
                 to="/add"
                 className={({ isActive }) =>
                   isActive
-                    ? "bg-blue-400 text-white px-4 py-2 rounded-md"
-                    : "text-gray-600 hover:bg-gray-200 px-4 py-2 rounded-md"
+                    ? "bg-blue-400 text-white px-8 py-2 rounded-md"
+                    : "text-gray-600 hover:bg-gray-200 px-8 py-2 rounded-md"
                 }
               >
                 <span className="pi pi-plus"> Add Task</span>

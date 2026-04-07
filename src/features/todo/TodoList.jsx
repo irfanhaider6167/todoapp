@@ -10,7 +10,7 @@ function TodoList() {
         Todo Items List
       </h2>
 
-      <div className="p-2">
+      <div className="p-4">
         <TailwindTable data={state.todos} />
       </div>
     </>

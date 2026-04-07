@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function TailwindTable({ data, onEdit }) {
   const { del, statusChange } = useGlobalContext();
   return (
-    <div className="p-4 w-full sm:px-2">
+    <div className="max-w-4xl mx-auto p-1">
       <div className="overflow-x-auto rounded-2xl shadow">
         <table className="min-w-full border border-gray-200 dark:border-gray-700">
           {/* HEADER */}

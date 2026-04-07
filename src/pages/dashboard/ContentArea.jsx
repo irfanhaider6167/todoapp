@@ -5,7 +5,7 @@ import Error from "./Error";
 
 function ContentArea() {
   return (
-    <div className="flex-1 p-4">
+    <div className="flex-1 p-0">
       <Routes>
         <Route path="*" element={<Error />} />
         <Route path="/" element={<TodoList />} />

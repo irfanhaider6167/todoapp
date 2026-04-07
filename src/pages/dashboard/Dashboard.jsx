@@ -8,7 +8,7 @@ function Dashboard() {
   const [darkMod, setDarkMod] = useState(false);
 
   return (
-    <div className="dark:bg-gray-900">
+    <div className="dark:bg-gray-900 ">
       <TopNavbar data={{ isOpen, setIsOpen, darkMod, setDarkMod }} />
 
       <div className="flex h-screen w-auto">
