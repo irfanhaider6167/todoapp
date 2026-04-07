@@ -3,9 +3,9 @@ import { useGlobalContext } from "../../context/todoContex";
 import { Link } from "react-router-dom";
 
 function TailwindTable({ data, onEdit }) {
-  const { del, state, statusChange } = useGlobalContext();
+  const { del, statusChange } = useGlobalContext();
   return (
-    <div className="p-4">
+    <div className="p-4 w-full sm:px-2">
       <div className="overflow-x-auto rounded-2xl shadow">
         <table className="min-w-full border border-gray-200 dark:border-gray-700">
           {/* HEADER */}
